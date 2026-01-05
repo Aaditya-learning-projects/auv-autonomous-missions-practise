@@ -1,3 +1,31 @@
+# AUV Autonomy Practice
+
+This repository documents my experiments with underwater robotics using **ArduSub** and **Python**. I built this to understand how to control an Autonomous Underwater Vehicle (AUV) without using a joystick, relying entirely on code and MAVLink commands.
+
+Everything here was tested in the **ArduPilot SITL** (Software In The Loop) simulator.
+
+Here is a breakdown of the missions I wrote and what they do:
+
+* **`waypoint_mission.py`** (The Main Project)
+    * Connects to the robot and uploads a GPS waypoint mission (a square pattern).
+    * Switches the robot to `AUTO` mode so it executes the path on its own.
+    * Includes a monitor loop to print distance and depth in real-time.
+
+* **`master_mission.py`** (Logic Practice)
+    * A manual control loop that uses a State Machine approach.
+    * Tells the robot to dive, move in a square, and surface using velocity commands.
+    * Good for understanding how to "drive" the robot via script rather than GPS.
+
+* **`vision_logic.py`** (Computer Vision Test)
+    * A standalone script testing OpenCV logic.
+    * It creates a fake camera feed, detects a red object, and calculates how the robot should turn (yaw) to center the target.
+
+* **`smart_compass.py`** & **`smart_dive.py`**
+    * Helper scripts I wrote to practice PID control loops for holding heading and depth.
+ 
+
+* **`DEMO**
+
 <img width="1062" height="441" alt="Screenshot from 2026-01-06 02-41-57" src="https://github.com/user-attachments/assets/48a9d728-e4e7-4848-a31d-fbddc257baca" />
 
 
