@@ -1,4 +1,4 @@
-# AUV Autonomy Practice
+# AUV Autonomy Practise
 
 This repository documents my experiments with underwater robotics using **ArduSub** and **Python**. I built this to understand how to control an Autonomous Underwater Vehicle (AUV) without using a joystick, relying entirely on code and MAVLink commands.
 
