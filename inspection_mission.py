@@ -61,7 +61,7 @@ for i in range(10):
     print("Leg 4: West")
     for i in range(5):
         set_velocity(0, -1, 0, 0) # 0 North, -1 East (West)
-        time.sleep(1
+        time.sleep(1)
 print("Surfacing...")
 set_mode('SURFACE') 
 
