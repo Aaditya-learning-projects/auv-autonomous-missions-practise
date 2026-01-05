@@ -37,7 +37,6 @@ set_mode('GUIDED')
 arm_sub()
 
 print("Diving to -5m...")
-# velocity z is positive for DOWN
 for i in range(10): 
     set_velocity(0, 0, 0.5, 0)
     time.sleep(1)
