@@ -27,10 +27,10 @@ def set_velocity(vx, vy, vz, yaw_rate):
     master.mav.set_position_target_local_ned_send(
         0, master.target_system, master.target_component,
         mavutil.mavlink.MAV_FRAME_LOCAL_NED,
-        0b0000111111000111, # Bitmask asking to control velocity only
-        0, 0, 0, # Position (ignored)
-        vx, vy, vz, # Velocity (m/s)
-        0, 0, 0, # Acceleration (ignored)
+        0b0000111111000111,
+        0, 0, 0, 
+        vx, vy, vz, 
+        0, 0, 0, 
         0, yaw_rate)
 
 set_mode('GUIDED') 
